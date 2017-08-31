@@ -25,6 +25,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'elzr/vim-json'
+Plugin 'ryanoasis/vim-devicons'
+
 call vundle#end()
 
 " Airline
@@ -46,7 +48,6 @@ nnoremap <leader>gb :Gblame<CR>
 
 " git gutter settings
 " has to be before colorscheme
-set updatetime=250
 autocmd ColorScheme * 
       \ highlight clear SignColumn
       \ highlight GitGutterAdd ctermfg=green
@@ -110,7 +111,7 @@ noremap <C-l> <C-w>l
 nnoremap <silent> n nzzzv
 nnoremap <silent> N Nzzzv
 
-" Esc to clear search highlighting
+" Z to clear search highlighting
 nnoremap Z :noh <cr><esc>
 
 " Move over wrapped lines
@@ -128,4 +129,6 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-
+" Vim-devicons
+" the amount of space to use after the glyph character (default ' ')
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
