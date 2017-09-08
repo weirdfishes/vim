@@ -7,12 +7,14 @@ Plugin 'gmarik/Vundle.vim' " Required
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax' " Addition JS Syntax 
 Plugin 'mxw/vim-jsx'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline' " Status bar at bottom of screen
+Plugin 'vim-airline/vim-airline-themes' " Themes for status bar
 Plugin 'stephenway/postcss.vim'
+Plugin 'othree/html5.vim'
+Plugin 'digitaltoad/vim-pug'
 Plugin 'posva/vim-vue'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/nerdtree' " File explorer
+Plugin 'jistr/vim-nerdtree-tabs' " Better tabs for NerdTree
 Plugin 'isruslan/vim-es6'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
@@ -38,7 +40,7 @@ let g:airline_theme='base16'
 
 " NERDTree/Tabs
 let g:nerdtree_tabs_open_on_console_startup = 1 
-let NERDTreeIgnore = ['\.pyc$', 'DS_Store$']
+let NERDTreeIgnore = ['\.pyc$', 'DS_Store$', '^node_modules\/$']
 
 " Fugitive
 let mapleader = "\<Space>"
@@ -83,6 +85,7 @@ set showmatch
 let base16colorspace=256
 syntax enable
 colorscheme base16-tomorrow-night
+"color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
 
