@@ -43,6 +43,7 @@ let g:nerdtree_tabs_open_on_console_startup = 1
 let NERDTreeIgnore = ['\.pyc$', 'DS_Store$', '^node_modules\/$']
 
 " Fugitive
+let mapleader = "\<Space>"
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gb :Gblame<CR>
@@ -87,7 +88,6 @@ colorscheme base16-tomorrow-night
 "color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
-let mapleader = "\<Space>"
 
 " vim-jsx (Allow jsx syntax in js files)
 let g:jsx_ext_required = 0 
