@@ -19,6 +19,7 @@ Plugin 'isruslan/vim-es6'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
 Plugin 'raimondi/delimitmate'
 Plugin 'dracula/vim'
 Plugin 'sjl/badwolf'
@@ -28,6 +29,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'elzr/vim-json'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'yggdroot/indentline'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -57,6 +60,10 @@ autocmd ColorScheme *
       \ highlight GitGutterDelete ctermfg=red
       \ highlight GitGutterChangeDelete ctermfg=yellow
 
+"Python indentLine settings
+let g:indentLine_char = '¦'
+let g:indentLine_setColors = 0
+
 """"""""""""""""""""
 " General settings "
 """"""""""""""""""""
@@ -84,7 +91,8 @@ set visualbell
 set showmatch
 let base16colorspace=256
 syntax enable
-colorscheme base16-tomorrow-night
+set background=light
+colorscheme solarized
 "color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
