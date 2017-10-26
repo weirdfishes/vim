@@ -10,6 +10,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'vim-airline/vim-airline' " Status bar at bottom of screen
 Plugin 'vim-airline/vim-airline-themes' " Themes for status bar
 Plugin 'stephenway/postcss.vim'
+Plugin 'ap/vim-css-color'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'posva/vim-vue'
