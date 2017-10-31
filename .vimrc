@@ -40,7 +40,7 @@ set t_Co=256
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='solarized'
 
 " NERDTree/Tabs
 let g:nerdtree_tabs_open_on_console_startup = 1 
@@ -90,10 +90,11 @@ set cursorline
 set noerrorbells
 set visualbell
 set showmatch
-let base16colorspace=256
+"let base16colorspace=256
 syntax enable
 set background=light
 colorscheme solarized
+let g:solarized_termcolors=256
 "color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
