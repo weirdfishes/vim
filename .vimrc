@@ -32,6 +32,7 @@ Plugin 'elzr/vim-json'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'yggdroot/indentline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'henrik/vim-indexed-search'
 
 call vundle#end()
 
