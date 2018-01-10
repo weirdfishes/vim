@@ -93,8 +93,7 @@ set visualbell
 set showmatch
 "let base16colorspace=256
 syntax enable
-set background=light
-colorscheme solarized
+color dracula
 let g:solarized_termcolors=256
 "color dracula
 filetype plugin indent on
