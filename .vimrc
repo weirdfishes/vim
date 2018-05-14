@@ -47,6 +47,10 @@ if executable('ag')
 endif
 cnoreabbrev Ack Ack!
 nnoremap <leader>a :Ag! 
+nnoremap <leader>d :Ag! <cword><cr>
+
+" Shortcut to redraw window 
+nnoremap <leader>r :redraw! <cr>
 
 " Vim-devicons
 " the amount of space to use after the glyph character (default ' ')
@@ -136,7 +140,10 @@ let g:solarized_termcolors=256
 color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
-set pastetoggle=<leader>p
+
+if mode() == 'n'
+  set pastetoggle=<F2>
+endif
 
 " use mouse
 if has('mouse')
@@ -148,7 +155,7 @@ set gfn=Monaco\ for\ Powerline\ Nerd\ Font\ Complete:h14
 set guioptions=
 if has("gui_running")
   let g:airline_theme='tomorrow'
-  colorscheme base16-tomorrow
+  colorscheme base16-tomorrow-night
 endif
 
 
