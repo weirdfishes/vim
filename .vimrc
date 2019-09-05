@@ -1,43 +1,38 @@
 set nocompatible
 
-" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim' " Required
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax' " Additional JS Syntax
-Plugin 'mxw/vim-jsx'
-Plugin 'vim-airline/vim-airline' " Status bar at bottom of screen
-Plugin 'vim-airline/vim-airline-themes' " Themes for status bar
-Plugin 'stephenway/postcss.vim'
-Plugin 'ap/vim-css-color'
-Plugin 'othree/html5.vim'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'posva/vim-vue'
-Plugin 'scrooloose/nerdtree' " File explorer
-Plugin 'jistr/vim-nerdtree-tabs' " Better tabs for NerdTree
-Plugin 'isruslan/vim-es6'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive' " Git plugin
-Plugin 'mileszs/ack.vim' " Ack and Ag searching
-Plugin 'rking/ag.vim'
-Plugin 'raimondi/delimitmate'
-Plugin 'dracula/vim'
-Plugin 'sjl/badwolf'
-Plugin 'chriskempson/base16-vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/ctrlp.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'elzr/vim-json'
-Plugin 'ryanoasis/vim-devicons'
-"Plugin 'yggdroot/indentline'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'henrik/vim-indexed-search'
-Plugin 'mattn/emmet-vim'
-"Plugin 'scrooloose/syntastic'
-Plugin 'w0rp/ale' " Automating linter
+call plug#begin('~/.vim/plugged')
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax' " Additional JS Syntax
+Plug 'mxw/vim-jsx'
+Plug 'vim-airline/vim-airline' " Status bar at bottom of screen
+Plug 'vim-airline/vim-airline-themes' " Themes for status bar
+Plug 'stephenway/postcss.vim'
+Plug 'ap/vim-css-color'
+Plug 'othree/html5.vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'posva/vim-vue'
+Plug 'scrooloose/nerdtree' " File explorer
+Plug 'jistr/vim-nerdtree-tabs' " Better tabs for NerdTree
+Plug 'isruslan/vim-es6'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive' " Git plugin
+Plug 'mileszs/ack.vim' " Ack and Ag searching
+Plug 'rking/ag.vim'
+Plug 'raimondi/delimitmate'
+Plug 'dracula/vim'
+Plug 'sjl/badwolf'
+Plug 'chriskempson/base16-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/ctrlp.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'elzr/vim-json'
+Plug 'ryanoasis/vim-devicons'
+Plug 'altercation/vim-colors-solarized'
+Plug 'henrik/vim-indexed-search'
+Plug 'mattn/emmet-vim'
+Plug 'w0rp/ale' " Automating linter
 
-call vundle#end()
+call plug#end()
 
 let mapleader = "\<Space>"
 
@@ -137,7 +132,6 @@ set showmatch
 let base16colorspace=256
 syntax enable
 let g:solarized_termcolors=256
-color dracula
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.pcss   set syntax=css
 
